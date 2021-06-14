@@ -4,8 +4,33 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "9f7a0417d823039df5ea6fdcd2965605",
+    "content-hash": "482d83e80306d36f8316cd164087c3c9",
     "packages": [
+        {
+            "name": "app/model-bundle",
+            "version": "dev-master",
+            "dist": {
+                "type": "path",
+                "url": "./bundles/model-bundle",
+                "reference": "5cee9e49934da3d14bbe8ffd1aa9276c22cfa5cd"
+            },
+            "require": {
+                "doctrine/doctrine-bundle": "^2",
+                "symfony/framework-bundle": "^4.4"
+            },
+            "type": "symfony-bundle",
+            "autoload": {
+                "psr-4": {
+                    "App\\Bundle\\ModelBundle\\": "src/"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "transport-options": {
+                "relative": true
+            }
+        },
         {
             "name": "composer/package-versions-deprecated",
             "version": "1.11.99.2",
@@ -9556,9 +9581,9 @@
         }
     ],
     "aliases": [],
-    "minimum-stability": "stable",
+    "minimum-stability": "dev",
     "stability-flags": [],
-    "prefer-stable": false,
+    "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {
         "php": ">=7.1.3",

@@ -1,0 +1,14 @@
+{
+    "name": "app/model-bundle",
+    "type": "symfony-bundle",
+    "require": {
+        "symfony/framework-bundle": "^4.4",
+        "doctrine/doctrine-bundle": "^2"
+    },
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "App\\Bundle\\ModelBundle\\": "src/"
+        }
+    }
+}
